@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Tower : MonoBehaviour
 {
@@ -10,23 +11,36 @@ public class Tower : MonoBehaviour
     public GameObject destroyPopupUI;
     public Image destroyProgressSlider;
     public float destroyTime = 5f;
+    public TowerBuilder buildArea;
 
     private float currentHealth;
     private bool isPlayerInRange = false;
     private bool isBeingDestroyed = false;
     private playerNumber playerInRange;
+    private float elapsedTime = 0;
 
     void Start()
     {
         currentHealth = maxHealth;
         destroyProgressSlider.gameObject.SetActive(false);
+        buildArea = transform.GetComponentInParent<TowerBuilder>();
     }
 
     void Update()
     {
-        if (isPlayerInRange && !isBeingDestroyed && Input.GetKeyDown(KeyCode.D))
+        if(playerInRange == playerNumber.Player1)
         {
-            StartCoroutine(DestroyTower());
+            if (isPlayerInRange && !isBeingDestroyed && Input.GetKeyDown(KeyCode.Space))
+            {
+                StartCoroutine(DestroyTower());
+            }
+        }
+        else
+        {
+            if (isPlayerInRange && !isBeingDestroyed && Input.GetKeyDown(KeyCode.RightShift))
+            {
+                StartCoroutine(DestroyTower());
+            }
         }
     }
 
@@ -41,6 +55,14 @@ public class Tower : MonoBehaviour
                 isPlayerInRange = true;
                 playerInRange = playerMovement.player;
                 destroyPopupUI = other.transform.GetChild(0).gameObject;
+                if (playerInRange == playerNumber.Player1)
+                {
+                    destroyPopupUI.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Press Space to Destroy";
+                }
+                else
+                {
+                    destroyPopupUI.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Press Right Shift to Destroy";
+                }
                 destroyPopupUI.SetActive(true);
             }
         }
@@ -61,25 +83,29 @@ public class Tower : MonoBehaviour
 
     private IEnumerator DestroyTower()
     {
-        isBeingDestroyed = true;
-        destroyPopupUI.SetActive(false);
-        destroyProgressSlider.gameObject.SetActive(true);
-        destroyProgressSlider.fillAmount = 0;
-
-        float elapsedTime = 0;
-        while (elapsedTime < destroyTime)
+        if (isPlayerInRange)
         {
-            elapsedTime += Time.deltaTime;
-            destroyProgressSlider.fillAmount = elapsedTime / destroyTime;
-            yield return null;
-        }
+            isBeingDestroyed = true;
+            destroyPopupUI.SetActive(false);
+            destroyProgressSlider.gameObject.SetActive(true);
 
-        destroyProgressSlider.gameObject.SetActive(false);
-        currentHealth -= maxHealth;
-        if (currentHealth <= 0)
-        {
-            Destroy(gameObject);
+            while (elapsedTime < destroyTime && isPlayerInRange)
+            {
+                elapsedTime += Time.deltaTime;
+                destroyProgressSlider.fillAmount = elapsedTime / destroyTime;
+                yield return null;
+            }
+            if (isPlayerInRange)
+            {
+                destroyProgressSlider.gameObject.SetActive(false);
+                currentHealth -= maxHealth;
+                if (currentHealth <= 0)
+                {
+                    Destroy(gameObject);
+                    buildArea.towerBuilt = false;
+                }
+            }
+            isBeingDestroyed = false;
         }
-        isBeingDestroyed = false;
     }
 }
