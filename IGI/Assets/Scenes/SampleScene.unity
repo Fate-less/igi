@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 186574637}
   - component: {fileID: 186574636}
   - component: {fileID: 186574635}
-  - component: {fileID: 186574634}
+  - component: {fileID: 186574639}
   m_Layer: 0
   m_Name: Upgrade
   m_TagString: Untagged
@@ -597,22 +597,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &186574634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186574633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ec079465810ae4ea44bc500d48a42c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 1
-  refillCost: 20
-  currency: {fileID: 2063631196}
-  resourceStorage: {fileID: 1414988969}
 --- !u!65 &186574635
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -699,6 +683,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186574639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186574633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bdcdb719ed5af4b9a753fd5b501c02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: 1
+  upgradeCost: 1
+  resource: {fileID: 185470793}
+  upgradedMesh: {fileID: 4300002, guid: 6fc4240da91ab4747a411a8313faed53, type: 3}
+  currency: {fileID: 2063631196}
 --- !u!1 &194562730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2664,7 +2665,7 @@ GameObject:
   - component: {fileID: 1314258588}
   - component: {fileID: 1314258587}
   - component: {fileID: 1314258586}
-  - component: {fileID: 1314258585}
+  - component: {fileID: 1314258590}
   m_Layer: 0
   m_Name: Upgrade
   m_TagString: Untagged
@@ -2672,22 +2673,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1314258585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314258584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2ec079465810ae4ea44bc500d48a42c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  owner: 0
-  refillCost: 20
-  currency: {fileID: 2063631196}
-  resourceStorage: {fileID: 1414988969}
 --- !u!65 &1314258586
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2774,6 +2759,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1314258590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314258584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bdcdb719ed5af4b9a753fd5b501c02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  owner: 0
+  upgradeCost: 1
+  resource: {fileID: 1414988969}
+  upgradedMesh: {fileID: 4300002, guid: 6fc4240da91ab4747a411a8313faed53, type: 3}
+  currency: {fileID: 2063631196}
 --- !u!1 &1414988963
 GameObject:
   m_ObjectHideFlags: 0
@@ -3979,7 +3981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de298984d15c28b48a5dcc9308beaea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 100
+  money: 150
   moneyTMP: {fileID: 1562733789}
 --- !u!4 &2063631198
 Transform:
