@@ -24,6 +24,7 @@ public class Tower : MonoBehaviour
         currentHealth = maxHealth;
         destroyProgressSlider.gameObject.SetActive(false);
         buildArea = transform.GetComponentInParent<TowerBuilder>();
+        owner = transform.parent.GetComponent<TowerBuilder>().towerNumber;
     }
 
     void Update()

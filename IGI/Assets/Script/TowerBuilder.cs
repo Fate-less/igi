@@ -12,6 +12,7 @@ public class TowerBuilder : MonoBehaviour
     public Transform buildSpot;
     public playerNumber towerNumber;
     public float buildTime = 5f;
+    public float upgradeTime = 60f;
     public bool towerBuilt = false;
     public Currency currency;
     public float buildCost;
@@ -27,7 +28,14 @@ public class TowerBuilder : MonoBehaviour
 
     void Start()
     {
-        currency = GameObject.Find("Handler").GetComponent<Currency>();
+        if (towerNumber == playerNumber.Player1)
+        {
+            currency = GameObject.FindGameObjectWithTag("CurrencyP1").GetComponent<Currency>();
+        }
+        else
+        {
+            currency = GameObject.FindGameObjectWithTag("CurrencyP2").GetComponent<Currency>();
+        }
         popupUI.SetActive(false);
         buildProgressSlider.gameObject.SetActive(false);
     }
@@ -150,10 +158,18 @@ public class TowerBuilder : MonoBehaviour
                 buildProgressSlider.fillAmount = elapsedTime / buildTime;
                 yield return null;
             }
+            {
+                while (elapsedTime < buildTime && isPlayerInRange)
+                {
+                    elapsedTime += Time.deltaTime;
+                    buildProgressSlider.fillAmount = elapsedTime / buildTime;
+                    yield return null;
+                }
+            }
             if (isPlayerInRange)
             {
                 buildProgressSlider.gameObject.SetActive(false);
-                towerObject = Instantiate(towerPrefab, buildSpot.position, Quaternion.identity);
+                towerObject = Instantiate(towerPrefab, buildSpot.position, towerPrefab.transform.rotation);
                 towerObject.transform.SetParent(gameObject.transform);
                 towerBuilt = true;
                 elapsedTime = 0;
@@ -172,19 +188,21 @@ public class TowerBuilder : MonoBehaviour
             buildProgressSlider.gameObject.SetActive(true);
             buildProgressSlider.fillAmount = 0;
 
-            while (elapsedTime < buildTime && isPlayerInRange)
+            while (elapsedTime < upgradeTime && isPlayerInRange)
             {
                 elapsedTime += Time.deltaTime;
-                buildProgressSlider.fillAmount = elapsedTime / buildTime;
+                buildProgressSlider.fillAmount = elapsedTime / upgradeTime;
                 yield return null;
             }
             if (isPlayerInRange)
             {
                 buildProgressSlider.gameObject.SetActive(false);
+                float foodLeft = towerObject.GetComponent<TowerResource>().towerResource;
                 Destroy(towerObject);
                 Debug.Log("destroyed");
-                towerObject = Instantiate(upgradePrefab, buildSpot.position, Quaternion.identity);
+                towerObject = Instantiate(upgradePrefab, buildSpot.position, towerPrefab.transform.rotation);
                 towerObject.transform.SetParent(gameObject.transform);
+                towerObject.GetComponent<TowerResource>().towerResource = foodLeft;
                 towerUpgraded = true;
                 elapsedTime = 0;
                 currency.money -= upgradeCost;

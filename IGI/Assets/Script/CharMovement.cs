@@ -11,27 +11,111 @@ public class CharMovement : MonoBehaviour
     public playerNumber player;
     public float moveSpeed = 5f;
     public Rigidbody rb;
+    public Animator anim;
 
     private Vector3 movement;
-
-    void Update()
+    private void Start()
     {
-        // Player 1 controls (WASD)
-        if(player == playerNumber.Player1)
+        if (player == playerNumber.Player1)
         {
-            movement.x = Input.GetKey(KeyCode.A) ? -1 : Input.GetKey(KeyCode.D) ? 1 : 0;
-            movement.z = Input.GetKey(KeyCode.W) ? 1 : Input.GetKey(KeyCode.S) ? -1 : 0;
+            anim.Play("idlebiru");
         }
         else
         {
-            movement.x = Input.GetKey(KeyCode.LeftArrow) ? -1 : Input.GetKey(KeyCode.RightArrow) ? 1 : 0;
-            movement.z = Input.GetKey(KeyCode.UpArrow) ? 1 : Input.GetKey(KeyCode.DownArrow) ? -1 : 0;
+            anim.Play("idlemerah");
+        }
+    }
+    void Update()
+    {
+        if (player == playerNumber.Player1)
+        {
+            movement.x = 0;
+            movement.z = 0;
+
+            if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
+            {
+                movement.x = -1;
+                anim.Play("walkbirukiri");
+            }
+            else if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
+            {
+                movement.x = 1;
+                anim.Play("walkbirukanan");
+            }
+            else if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            {
+                movement.z = 1;
+                anim.Play("walkbiruatas");
+            }
+            else if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            {
+                movement.z = -1;
+                anim.Play("walkbirubawah");
+            }
+            else if (movement.x == 0 && movement.z == 0 && Input.GetKeyDown(KeyCode.Space))
+            {
+                anim.Play("biruattack");
+            }
+            else if (movement.x == 0 && movement.z == 0 && !Input.GetKey(KeyCode.Space))
+            {
+                StartCoroutine(idleBiruCooldown());
+            }
+        }
+        else
+        {
+            movement.x = 0;
+            movement.z = 0;
+
+            if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
+            {
+                movement.x = -1;
+                anim.Play("walkmerahkiri");
+            }
+            else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
+            {
+                movement.x = 1;
+                anim.Play("walkmerahkanan");
+            }
+            else if (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
+            {
+                movement.z = 1;
+                anim.Play("walkmerahatas");
+            }
+            else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
+            {
+                movement.z = -1;
+                anim.Play("walkmerahbawah");
+            }
+            else if (movement.x == 0 && movement.z == 0 && Input.GetKeyDown(KeyCode.RightShift))
+            {
+                anim.Play("merahattack");
+            }
+            else if (movement.x == 0 && movement.z == 0 && !Input.GetKey(KeyCode.RightShift))
+            {
+                StartCoroutine(idleMerahCooldown());
+            }
         }
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    public IEnumerator idleBiruCooldown()
+    {
+        yield return new WaitForSeconds(2f);
+        if (movement.x == 0 && movement.z == 0 && !Input.GetKey(KeyCode.Space)){
+            anim.Play("idlebiru");
+        }
+    }
+
+    public IEnumerator idleMerahCooldown()
+    {
+        yield return new WaitForSeconds(2f);
+        if (movement.x == 0 && movement.z == 0 && !Input.GetKey(KeyCode.RightShift)){
+            anim.Play("idlemerah");
+        }
     }
 }
 

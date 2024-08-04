@@ -15,7 +15,14 @@ public class Refill : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currency = GameObject.Find("Handler").GetComponent<Currency>();
+        if(owner == playerNumber.Player1)
+        {
+            currency = GameObject.FindGameObjectWithTag("CurrencyP1").GetComponent<Currency>();
+        }
+        else
+        {
+            currency = GameObject.FindGameObjectWithTag("CurrencyP2").GetComponent<Currency>();
+        }
     }
 
     // Update is called once per frame

@@ -8,7 +8,6 @@ public class UpgradeStorage : MonoBehaviour
     public playerNumber owner;
     public float upgradeCost;
     public Resource resource;
-    public Mesh upgradedMesh;
     public Currency currency;
 
     private GameObject player;
@@ -17,8 +16,15 @@ public class UpgradeStorage : MonoBehaviour
 
     private void Start()
     {
-        currency = GameObject.Find("Handler").GetComponent<Currency>();
-        if(owner == playerNumber.Player1)
+        if (owner == playerNumber.Player1)
+        {
+            currency = GameObject.FindGameObjectWithTag("CurrencyP1").GetComponent<Currency>();
+        }
+        else
+        {
+            currency = GameObject.FindGameObjectWithTag("CurrencyP2").GetComponent<Currency>();
+        }
+        if (owner == playerNumber.Player1)
         {
             resource = GameObject.FindGameObjectWithTag("Storage1").GetComponent<Resource>();
         }
@@ -86,7 +92,6 @@ public class UpgradeStorage : MonoBehaviour
     public void upgradeStorage()
     {
         resource.maxFoodResource = 20;
-        resource.GetComponent<MeshFilter>().mesh = upgradedMesh;
         currency.money -= upgradeCost;
     }
 }

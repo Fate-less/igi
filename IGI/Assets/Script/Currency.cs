@@ -12,6 +12,6 @@ public class Currency : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moneyTMP.text = "Currency: " + money.ToString();
+        moneyTMP.text = money.ToString();
     }
 }
