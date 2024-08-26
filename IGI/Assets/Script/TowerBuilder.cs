@@ -169,7 +169,7 @@ public class TowerBuilder : MonoBehaviour
             if (isPlayerInRange)
             {
                 buildProgressSlider.gameObject.SetActive(false);
-                towerObject = Instantiate(towerPrefab, buildSpot.position, towerPrefab.transform.rotation);
+                towerObject = Instantiate(towerPrefab, buildSpot.position, gameObject.transform.rotation);
                 towerObject.transform.SetParent(gameObject.transform);
                 towerBuilt = true;
                 elapsedTime = 0;

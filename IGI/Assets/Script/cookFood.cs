@@ -9,7 +9,7 @@ public class cookFood : MonoBehaviour
     public TowerResource towerResource;
     public GameObject customer;
     public Currency currency;
-    private bool isInRange;
+    private bool isInRange = false;
     private float cookCD;
     // Start is called before the first frame update
     void Start()

@@ -25,68 +25,78 @@ public class CharMovement : MonoBehaviour
             anim.Play("idlemerah");
         }
     }
-    void Update()
+    private void Update()
     {
-        if (player == playerNumber.Player1)
+        // Handle attack
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             movement.x = 0;
             movement.z = 0;
+            anim.Play("biruattack");
+        }
+    }
+    void FixedUpdate()
+    {
+        // Reset movement
+        movement.x = 0;
+        movement.z = 0;
 
-            if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
+        // Player 1 Controls
+        if (player == playerNumber.Player1)
+        {
+            // Handle movement inputs
+            if (Input.GetKey(KeyCode.A))
             {
                 movement.x = -1;
                 anim.Play("walkbirukiri");
             }
-            else if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
+            else if (Input.GetKey(KeyCode.D))
             {
                 movement.x = 1;
                 anim.Play("walkbirukanan");
             }
-            else if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            else if (Input.GetKey(KeyCode.W))
             {
                 movement.z = 1;
                 anim.Play("walkbiruatas");
             }
-            else if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            else if (Input.GetKey(KeyCode.S))
             {
                 movement.z = -1;
                 anim.Play("walkbirubawah");
-            }
-            else if (movement.x == 0 && movement.z == 0 && Input.GetKeyDown(KeyCode.Space))
-            {
-                anim.Play("biruattack");
             }
             else if (movement.x == 0 && movement.z == 0 && !Input.GetKey(KeyCode.Space))
             {
                 StartCoroutine(idleBiruCooldown());
             }
         }
+        // Player 2 Controls
         else
         {
-            movement.x = 0;
-            movement.z = 0;
-
-            if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
+            // Handle movement inputs
+            if (Input.GetKey(KeyCode.LeftArrow))
             {
                 movement.x = -1;
                 anim.Play("walkmerahkiri");
             }
-            else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
+            else if (Input.GetKey(KeyCode.RightArrow))
             {
                 movement.x = 1;
                 anim.Play("walkmerahkanan");
             }
-            else if (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.UpArrow))
             {
                 movement.z = 1;
                 anim.Play("walkmerahatas");
             }
-            else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
+            else if (Input.GetKey(KeyCode.DownArrow))
             {
                 movement.z = -1;
                 anim.Play("walkmerahbawah");
             }
-            else if (movement.x == 0 && movement.z == 0 && Input.GetKeyDown(KeyCode.RightShift))
+
+            // Handle attack
+            if (movement.x == 0 && movement.z == 0 && Input.GetKeyDown(KeyCode.RightShift))
             {
                 anim.Play("merahattack");
             }
@@ -95,12 +105,12 @@ public class CharMovement : MonoBehaviour
                 StartCoroutine(idleMerahCooldown());
             }
         }
+
+        // Apply force to the rigidbody
+        Vector3 force = new Vector3(movement.x, 0, movement.z).normalized * moveSpeed;
+        rb.AddForce(force, ForceMode.Force);
     }
 
-    void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-    }
 
     public IEnumerator idleBiruCooldown()
     {
