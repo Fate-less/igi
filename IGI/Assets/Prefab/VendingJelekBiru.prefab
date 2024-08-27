@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: 0
-  maxCD: 5
+  maxCD: 12
   towerResource: {fileID: 0}
   customer: {fileID: 0}
   currency: {fileID: 0}
@@ -257,8 +257,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.0141, y: 0.0005}
-  m_SizeDelta: {x: 7, y: 2}
+  m_AnchoredPosition: {x: 0.0141, y: -0.0001166}
+  m_SizeDelta: {x: 3.371763, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1604134682694343414
 Canvas:
@@ -359,8 +359,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.0201, y: 0.0005}
-  m_SizeDelta: {x: 7, y: 2}
+  m_AnchoredPosition: {x: 0.0201, y: -0.000205}
+  m_SizeDelta: {x: 3.34952, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &3345641203825529818
 Canvas:
@@ -579,7 +579,7 @@ MonoBehaviour:
   maxHealth: 100
   destroyPopupUI: {fileID: 0}
   destroyProgressSlider: {fileID: 1985900938530967398}
-  destroyTime: 10
+  destroyTime: 5
   buildArea: {fileID: 0}
 --- !u!114 &6129382042982561413
 MonoBehaviour:

@@ -31,7 +31,7 @@ public class TimeManager : MonoBehaviour
         {
             for(int i = 0; i < 5; i++)
             {
-                spawner[i].spawnInterval = 1;
+                spawner[i].spawnInterval = 5;
             }
         }
         else if (minute >= 12)
@@ -49,7 +49,7 @@ public class TimeManager : MonoBehaviour
         {
             for (int i = 0; i < 5; i++)
             {
-                spawner[i].spawnInterval = 3;
+                spawner[i].spawnInterval = 8;
             }
             spawner[2].ActivateSpawner();
             builder[3].gameObject.SetActive(true);
@@ -72,7 +72,7 @@ public class TimeManager : MonoBehaviour
         {
             for (int i = 0; i < 5; i++)
             {
-                spawner[i].spawnInterval = 5;
+                spawner[i].spawnInterval = 12;
             }
         }
     }

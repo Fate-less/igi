@@ -103,10 +103,15 @@ public class HammerAttack : MonoBehaviour
     public IEnumerator EnemyGotHit()
     {
         //nyerang
+        CharMovement enemyMovement = enemyObject.GetComponent<CharMovement>();
+        HammerAttack enemyAttack = enemyObject.transform.GetChild(2).GetComponent<HammerAttack>();
+        Transform enemyPosition = enemyObject.transform;
         enemyObject.GetComponent<PlayerBlink>().GetHit();
-        enemyObject.GetComponent<CharMovement>().enabled = false;
-        yield return new WaitForSeconds(enemyObject.GetComponent<PlayerBlink>().blinkDuration);
-        enemyObject.GetComponent<CharMovement>().enabled = true;
-        enemyObject.transform.position = enemySpawnPoint.position;
+        enemyMovement.enabled = false;
+        enemyAttack.enabled = false;
+        yield return new WaitForSeconds(enemyObject.GetComponent<PlayerBlink>().blinkDuration - 0.5f);
+        enemyAttack.enabled = true;
+        enemyMovement.enabled = true;
+        enemyPosition.position = enemySpawnPoint.position;
     }
 }

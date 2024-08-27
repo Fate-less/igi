@@ -38,7 +38,7 @@ public class Refill : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.Space) && resourceStorage.foodResource < resourceStorage.maxFoodResource)
                     {
                         currency.money -= refillCost;
-                        resourceStorage.foodResource += 1;
+                        resourceStorage.foodResource += 2;
                     }
                 }
                 else
@@ -48,7 +48,7 @@ public class Refill : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.RightShift) && resourceStorage.foodResource < resourceStorage.maxFoodResource)
                     {
                         currency.money -= refillCost;
-                        resourceStorage.foodResource += 1;
+                        resourceStorage.foodResource += 2;
                     }
                 }
             }

@@ -28,11 +28,24 @@ public class CharMovement : MonoBehaviour
     private void Update()
     {
         // Handle attack
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (player == playerNumber.Player1)
         {
-            movement.x = 0;
-            movement.z = 0;
-            anim.Play("biruattack");
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                movement.x = 0;
+                movement.z = 0;
+                anim.Play("biruattack");
+            }
+        }
+        else
+        {
+            // Handle attack
+            if (movement.x == 0 && movement.z == 0 && Input.GetKeyDown(KeyCode.RightShift))
+            {
+                movement.x = 0;
+                movement.z = 0;
+                anim.Play("merahattack");
+            }
         }
     }
     void FixedUpdate()
@@ -93,12 +106,6 @@ public class CharMovement : MonoBehaviour
             {
                 movement.z = -1;
                 anim.Play("walkmerahbawah");
-            }
-
-            // Handle attack
-            if (movement.x == 0 && movement.z == 0 && Input.GetKeyDown(KeyCode.RightShift))
-            {
-                anim.Play("merahattack");
             }
             else if (movement.x == 0 && movement.z == 0 && !Input.GetKey(KeyCode.RightShift))
             {

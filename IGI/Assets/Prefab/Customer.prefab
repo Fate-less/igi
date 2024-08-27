@@ -151,7 +151,8 @@ MonoBehaviour:
   detectionRange: 1
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 64
-  waitTime: 15
+    m_Bits: 0
+  waitTime: 20
   playerDamage: 1
   walkingDirection: 0
+  owner: 0

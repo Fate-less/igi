@@ -91,7 +91,7 @@ public class UpgradeStorage : MonoBehaviour
 
     public void upgradeStorage()
     {
-        resource.maxFoodResource = 20;
+        resource.maxFoodResource = 40;
         currency.money -= upgradeCost;
     }
 }

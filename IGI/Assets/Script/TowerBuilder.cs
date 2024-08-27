@@ -10,6 +10,7 @@ public class TowerBuilder : MonoBehaviour
     public Image buildProgressSlider;
     public GameObject towerPrefab;
     public Transform buildSpot;
+    public Transform upgradeSpot;
     public playerNumber towerNumber;
     public float buildTime = 5f;
     public float upgradeTime = 60f;
@@ -169,7 +170,7 @@ public class TowerBuilder : MonoBehaviour
             if (isPlayerInRange)
             {
                 buildProgressSlider.gameObject.SetActive(false);
-                towerObject = Instantiate(towerPrefab, buildSpot.position, gameObject.transform.rotation);
+                towerObject = Instantiate(towerPrefab, buildSpot.position, towerPrefab.transform.rotation);
                 towerObject.transform.SetParent(gameObject.transform);
                 towerBuilt = true;
                 elapsedTime = 0;
@@ -200,8 +201,9 @@ public class TowerBuilder : MonoBehaviour
                 float foodLeft = towerObject.GetComponent<TowerResource>().towerResource;
                 Destroy(towerObject);
                 Debug.Log("destroyed");
-                towerObject = Instantiate(upgradePrefab, buildSpot.position, towerPrefab.transform.rotation);
+                towerObject = Instantiate(upgradePrefab, upgradeSpot.position, upgradePrefab.transform.rotation);
                 towerObject.transform.SetParent(gameObject.transform);
+                towerObject.LeanMoveY(0, 0.1f);
                 towerObject.GetComponent<TowerResource>().towerResource = foodLeft;
                 towerUpgraded = true;
                 elapsedTime = 0;

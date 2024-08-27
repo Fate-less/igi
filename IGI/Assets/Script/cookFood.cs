@@ -38,7 +38,7 @@ public class cookFood : MonoBehaviour
                 if (cookCD <= 0)
                 {
                     cookCD = maxCD;
-                    currency.money += 40;
+                    currency.money += 30;
                     towerResource.towerResource -= 1;
                     try
                     {

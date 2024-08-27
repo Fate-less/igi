@@ -1,0 +1,1483 @@
+fileFormatVersion: 2
+guid: 6dce734367d6d6745b008bb64b44c730
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Tutorial_Icon_Frame_0
+    originalName: 
+    pivot: {x: 0.5408163, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 290
+      width: 49
+      height: 27
+    spriteID: 90179fbf9e6a395449656e4ac0ce2190
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 290}
+  - name: Tutorial_Icon_Frame_1
+    originalName: 
+    pivot: {x: 0.5408163, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 325
+      width: 49
+      height: 27
+    spriteID: 3e88897297363e34b80b180f922b93dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 325}
+  - name: Tutorial_Icon_Frame_2
+    originalName: 
+    pivot: {x: 0.51960784, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 115
+      width: 51
+      height: 28
+    spriteID: 02864328602d5bd44853be4c703513fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 115}
+  - name: Tutorial_Icon_Frame_3
+    originalName: 
+    pivot: {x: 0.50961536, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 42
+      width: 52
+      height: 29
+    spriteID: 78f2a3f672cf8ae4dbef2cefa8750c01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 42}
+  - name: Tutorial_Icon_Frame_4
+    originalName: 
+    pivot: {x: 0.5638298, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 70
+      width: 47
+      height: 25
+    spriteID: ec7ef062f110ec54aac1353f48b0f25d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 70}
+  - name: Tutorial_Icon_Frame_5
+    originalName: 
+    pivot: {x: 0.6625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 226
+      width: 40
+      height: 22
+    spriteID: cf738ed9a4869994aa26d31088a61910
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 226}
+  - name: Tutorial_Icon_Frame_6
+    originalName: 
+    pivot: {x: 0.7162162, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 285
+      width: 37
+      height: 23
+    spriteID: f01106efc5d614f4499eac1ecafcb95f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 285}
+  - name: Tutorial_Icon_Frame_7
+    originalName: 
+    pivot: {x: 0.75714284, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 60
+      width: 35
+      height: 22
+    spriteID: 33c38c54bf3c16a46bc194f40b6a69f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 60}
+  - name: Tutorial_Icon_Frame_8
+    originalName: 
+    pivot: {x: 0.7794118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 120
+      width: 34
+      height: 22
+    spriteID: 5890a2ad5f69efd4bb7118f7f9347d44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 120}
+  - name: Tutorial_Icon_Frame_9
+    originalName: 
+    pivot: {x: 0.7794118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 150
+      width: 34
+      height: 22
+    spriteID: 4dd5778c4f50b5d45899e2a104e95840
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 150}
+  - name: Tutorial_Icon_Frame_10
+    originalName: 
+    pivot: {x: 0.75714284, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 90
+      width: 35
+      height: 22
+    spriteID: a6d91b8d46110fd409329d79be31810c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 90}
+  - name: Tutorial_Icon_Frame_11
+    originalName: 
+    pivot: {x: 0.5888889, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 134
+      width: 45
+      height: 24
+    spriteID: 609e8fc14d9864649a5cd9f52cef6ecd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 134}
+  - name: Tutorial_Icon_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 53
+      height: 30
+    spriteID: 96d582823f4d17340a9078f8818b0bf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Tutorial_Icon_Frame_13
+    originalName: 
+    pivot: {x: 0.51960784, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 151
+      width: 51
+      height: 28
+    spriteID: c14422e2c4555924881656e77b31b73b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 151}
+  - name: Tutorial_Icon_Frame_14
+    originalName: 
+    pivot: {x: 0.5408163, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 360
+      width: 49
+      height: 27
+    spriteID: aa8968fd35f68bb458a22029a3aa681d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 360}
+  - name: Tutorial_Icon_Frame_15
+    originalName: 
+    pivot: {x: 0.5408163, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 395
+      width: 49
+      height: 27
+    spriteID: bb745b09e6e326b4ababd82511791099
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 395}
+  - name: Tutorial_Icon_Frame_16
+    originalName: 
+    pivot: {x: 0.6625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 344
+      width: 40
+      height: 20
+    spriteID: 42c58f193210a3243bbea303911c6479
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 344}
+  - name: Tutorial_Icon_Frame_17
+    originalName: 
+    pivot: {x: 0.6625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 372
+      width: 40
+      height: 20
+    spriteID: e6294270c2055c3439f24bcde0feb558
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 372}
+  - name: Tutorial_Icon_Frame_18
+    originalName: 
+    pivot: {x: 0.6625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 400
+      width: 40
+      height: 20
+    spriteID: 2e0d6826a382c3a4793d0cebb1c1f7c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 400}
+  - name: Tutorial_Icon_Frame_19
+    originalName: 
+    pivot: {x: 0.6625, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 428
+      width: 40
+      height: 20
+    spriteID: e0623b62e71275a4c8b6dac950ecb6e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 428}
+  - name: Tutorial_Icon_Frame_20
+    originalName: 
+    pivot: {x: 0.64634144, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 256
+      width: 41
+      height: 21
+    spriteID: 2bc1703db58ce8a44bc8d96404a5a8cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 256}
+  - name: Tutorial_Icon_Frame_21
+    originalName: 
+    pivot: {x: 0.63095236, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 196
+      width: 42
+      height: 22
+    spriteID: 44b51dae85aa59545bba67ba93c412ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 196}
+  - name: Tutorial_Icon_Frame_22
+    originalName: 
+    pivot: {x: 0.67948717, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 484
+      width: 39
+      height: 20
+    spriteID: b1a2760341f3e0a438699246a3782909
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 484}
+  - name: Tutorial_Icon_Frame_23
+    originalName: 
+    pivot: {x: 0.69736844, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 292
+      width: 38
+      height: 19
+    spriteID: 1a64417fb6b8df64d965bb7261640d8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 292}
+  - name: Tutorial_Icon_Frame_24
+    originalName: 
+    pivot: {x: 0.5408163, y: -0.08}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 430
+      width: 49
+      height: 25
+    spriteID: d133c5724ad38554eacbe06a787872dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 430}
+  - name: Tutorial_Icon_Frame_25
+    originalName: 
+    pivot: {x: 0.5408163, y: -0.08}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 463
+      width: 49
+      height: 25
+    spriteID: ed3828cd61179aa439b51df3f688754f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 463}
+  - name: Tutorial_Icon_Frame_26
+    originalName: 
+    pivot: {x: 0.51960784, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 222
+      width: 51
+      height: 26
+    spriteID: 8034f4d35a1ec344aa9eeb78650047fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 222}
+  - name: Tutorial_Icon_Frame_27
+    originalName: 
+    pivot: {x: 0.50961536, y: -0.074074075}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 187
+      width: 52
+      height: 27
+    spriteID: 5d4ea364ae69c5c48b644b8f1b3ee011
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 187}
+  - name: Tutorial_Icon_Frame_28
+    originalName: 
+    pivot: {x: 0.5638298, y: -0.08695652}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 103
+      width: 47
+      height: 23
+    spriteID: f4677cae4e9ed514582b65eea6aec2e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 103}
+  - name: Tutorial_Icon_Frame_29
+    originalName: 
+    pivot: {x: 0.6625, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 456
+      width: 40
+      height: 20
+    spriteID: 46dd4ef305f8a5c4e85ff25223011e23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 456}
+  - name: Tutorial_Icon_Frame_30
+    originalName: 
+    pivot: {x: 0.7162162, y: -0.0952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 31
+      width: 37
+      height: 21
+    spriteID: d28552f257250f74e8c053a54570cdb6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 31}
+  - name: Tutorial_Icon_Frame_31
+    originalName: 
+    pivot: {x: 0.7162162, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 180
+      width: 37
+      height: 20
+    spriteID: 56840eed11a640d468af60c77a60f385
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 180}
+  - name: Tutorial_Icon_Frame_32
+    originalName: 
+    pivot: {x: 0.7162162, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 208
+      width: 37
+      height: 20
+    spriteID: d58f5e9c24c5b4746b7df255bb71189c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 208}
+  - name: Tutorial_Icon_Frame_33
+    originalName: 
+    pivot: {x: 0.7162162, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 236
+      width: 37
+      height: 20
+    spriteID: 7b8f448ba44f6ba48931177f0b3c46a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 236}
+  - name: Tutorial_Icon_Frame_34
+    originalName: 
+    pivot: {x: 0.7162162, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 264
+      width: 37
+      height: 20
+    spriteID: dfcb4a59be85dc34ca39d6464beeae81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 264}
+  - name: Tutorial_Icon_Frame_35
+    originalName: 
+    pivot: {x: 0.5888889, y: -0.09090909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 166
+      width: 45
+      height: 22
+    spriteID: 7c88ed195fb61c84b830bcd190ac2fb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 166}
+  - name: Tutorial_Icon_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: -0.071428575}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 79
+      width: 53
+      height: 28
+    spriteID: c531fe3a0f7956e48bc6905cc18502ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 79}
+  - name: Tutorial_Icon_Frame_37
+    originalName: 
+    pivot: {x: 0.51960784, y: -0.07692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 256
+      width: 51
+      height: 26
+    spriteID: ce09e6360e544d54f9145bc992bc39e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 256}
+  - name: Tutorial_Icon_Frame_38
+    originalName: 
+    pivot: {x: 0.5408163, y: -0.08}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 4
+      width: 49
+      height: 25
+    spriteID: 6b57a411166e43349a6cef1c0daed604
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 4}
+  - name: Tutorial_Icon_Frame_39
+    originalName: 
+    pivot: {x: 0.5408163, y: -0.08}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 37
+      width: 49
+      height: 25
+    spriteID: 702e9844118e09c44957a88bef342dd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 37}
+  - name: Tutorial_Icon_Frame_40
+    originalName: 
+    pivot: {x: 0.6625, y: -0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 319
+      width: 40
+      height: 18
+    spriteID: c878d3dde8ff01e4f86daf64805a2fce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 319}
+  - name: Tutorial_Icon_Frame_41
+    originalName: 
+    pivot: {x: 0.6625, y: -0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 345
+      width: 40
+      height: 18
+    spriteID: 7d86d5c5f2aa5c14ca8f46399182efed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 345}
+  - name: Tutorial_Icon_Frame_42
+    originalName: 
+    pivot: {x: 0.6625, y: -0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 371
+      width: 40
+      height: 18
+    spriteID: cf1b7ef1b441eef4e94dfd5e00ceac34
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 371}
+  - name: Tutorial_Icon_Frame_43
+    originalName: 
+    pivot: {x: 0.6625, y: -0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 397
+      width: 40
+      height: 18
+    spriteID: f3e8fe5a2ff8f3e4e8b1842c98c1e528
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 397}
+  - name: Tutorial_Icon_Frame_44
+    originalName: 
+    pivot: {x: 0.64634144, y: -0.10526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 4
+      width: 41
+      height: 19
+    spriteID: 966f6488e70b30d4981e73610f71c8c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 4}
+  - name: Tutorial_Icon_Frame_45
+    originalName: 
+    pivot: {x: 0.63095236, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 316
+      width: 42
+      height: 20
+    spriteID: 27636d314227e2b46a38e16b82bace86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 316}
+  - name: Tutorial_Icon_Frame_46
+    originalName: 
+    pivot: {x: 0.67948717, y: -0.11111111}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 423
+      width: 39
+      height: 18
+    spriteID: 1b7e97357a72bf94f9cdd00a9e65b7c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 423}
+  - name: Tutorial_Icon_Frame_47
+    originalName: 
+    pivot: {x: 0.69736844, y: -0.11764706}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 122
+      y: 449
+      width: 38
+      height: 17
+    spriteID: 03393e2327a380e438ee8a448559e14b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 122, y: 449}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1345333488
+    name: Tutorial_Icon
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Tutorial_Icon_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 49
+        height: 27
+      spriteId: 90179fbf9e6a395449656e4ac0ce2190
+    - name: Tutorial_Icon_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 0
+        width: 49
+        height: 27
+      spriteId: 3e88897297363e34b80b180f922b93dd
+    - name: Tutorial_Icon_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 0
+        width: 51
+        height: 28
+      spriteId: 02864328602d5bd44853be4c703513fe
+    - name: Tutorial_Icon_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 0
+        width: 52
+        height: 29
+      spriteId: 78f2a3f672cf8ae4dbef2cefa8750c01
+    - name: Tutorial_Icon_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 0
+        width: 47
+        height: 25
+      spriteId: ec7ef062f110ec54aac1353f48b0f25d
+    - name: Tutorial_Icon_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 0
+        width: 40
+        height: 22
+      spriteId: cf738ed9a4869994aa26d31088a61910
+    - name: Tutorial_Icon_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 0
+        y: 0
+        width: 37
+        height: 23
+      spriteId: f01106efc5d614f4499eac1ecafcb95f
+    - name: Tutorial_Icon_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 0
+        y: 0
+        width: 35
+        height: 22
+      spriteId: 33c38c54bf3c16a46bc194f40b6a69f1
+    - name: Tutorial_Icon_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 0
+        y: 0
+        width: 34
+        height: 22
+      spriteId: 5890a2ad5f69efd4bb7118f7f9347d44
+    - name: Tutorial_Icon_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 0
+        y: 0
+        width: 34
+        height: 22
+      spriteId: 4dd5778c4f50b5d45899e2a104e95840
+    - name: Tutorial_Icon_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 0
+        y: 0
+        width: 35
+        height: 22
+      spriteId: a6d91b8d46110fd409329d79be31810c
+    - name: Tutorial_Icon_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 0
+        y: 0
+        width: 45
+        height: 24
+      spriteId: 609e8fc14d9864649a5cd9f52cef6ecd
+    - name: Tutorial_Icon_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 0
+        y: 0
+        width: 53
+        height: 30
+      spriteId: 96d582823f4d17340a9078f8818b0bf9
+    - name: Tutorial_Icon_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 0
+        y: 0
+        width: 51
+        height: 28
+      spriteId: c14422e2c4555924881656e77b31b73b
+    - name: Tutorial_Icon_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 0
+        y: 0
+        width: 49
+        height: 27
+      spriteId: aa8968fd35f68bb458a22029a3aa681d
+    - name: Tutorial_Icon_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: 0
+        width: 49
+        height: 27
+      spriteId: bb745b09e6e326b4ababd82511791099
+    - name: Tutorial_Icon_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 0
+        y: 0
+        width: 40
+        height: 20
+      spriteId: 42c58f193210a3243bbea303911c6479
+    - name: Tutorial_Icon_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 0
+        y: 0
+        width: 40
+        height: 20
+      spriteId: e6294270c2055c3439f24bcde0feb558
+    - name: Tutorial_Icon_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 0
+        y: 0
+        width: 40
+        height: 20
+      spriteId: 2e0d6826a382c3a4793d0cebb1c1f7c2
+    - name: Tutorial_Icon_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 0
+        y: 0
+        width: 40
+        height: 20
+      spriteId: e0623b62e71275a4c8b6dac950ecb6e3
+    - name: Tutorial_Icon_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 0
+        y: 0
+        width: 41
+        height: 21
+      spriteId: 2bc1703db58ce8a44bc8d96404a5a8cf
+    - name: Tutorial_Icon_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 0
+        y: 0
+        width: 42
+        height: 22
+      spriteId: 44b51dae85aa59545bba67ba93c412ee
+    - name: Tutorial_Icon_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 0
+        y: 0
+        width: 39
+        height: 20
+      spriteId: b1a2760341f3e0a438699246a3782909
+    - name: Tutorial_Icon_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 0
+        y: 0
+        width: 38
+        height: 19
+      spriteId: 1a64417fb6b8df64d965bb7261640d8d
+    - name: Tutorial_Icon_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 0
+        y: 2
+        width: 49
+        height: 25
+      spriteId: d133c5724ad38554eacbe06a787872dd
+    - name: Tutorial_Icon_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 0
+        y: 2
+        width: 49
+        height: 25
+      spriteId: ed3828cd61179aa439b51df3f688754f
+    - name: Tutorial_Icon_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 0
+        y: 2
+        width: 51
+        height: 26
+      spriteId: 8034f4d35a1ec344aa9eeb78650047fc
+    - name: Tutorial_Icon_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 0
+        y: 2
+        width: 52
+        height: 27
+      spriteId: 5d4ea364ae69c5c48b644b8f1b3ee011
+    - name: Tutorial_Icon_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 0
+        y: 2
+        width: 47
+        height: 23
+      spriteId: f4677cae4e9ed514582b65eea6aec2e2
+    - name: Tutorial_Icon_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 0
+        y: 2
+        width: 40
+        height: 20
+      spriteId: 46dd4ef305f8a5c4e85ff25223011e23
+    - name: Tutorial_Icon_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 0
+        y: 2
+        width: 37
+        height: 21
+      spriteId: d28552f257250f74e8c053a54570cdb6
+    - name: Tutorial_Icon_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 0
+        y: 2
+        width: 37
+        height: 20
+      spriteId: 56840eed11a640d468af60c77a60f385
+    - name: Tutorial_Icon_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 0
+        y: 2
+        width: 37
+        height: 20
+      spriteId: d58f5e9c24c5b4746b7df255bb71189c
+    - name: Tutorial_Icon_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 0
+        y: 2
+        width: 37
+        height: 20
+      spriteId: 7b8f448ba44f6ba48931177f0b3c46a2
+    - name: Tutorial_Icon_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 0
+        y: 2
+        width: 37
+        height: 20
+      spriteId: dfcb4a59be85dc34ca39d6464beeae81
+    - name: Tutorial_Icon_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 0
+        y: 2
+        width: 45
+        height: 22
+      spriteId: 7c88ed195fb61c84b830bcd190ac2fb7
+    - name: Tutorial_Icon_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 0
+        y: 2
+        width: 53
+        height: 28
+      spriteId: c531fe3a0f7956e48bc6905cc18502ac
+    - name: Tutorial_Icon_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 0
+        y: 2
+        width: 51
+        height: 26
+      spriteId: ce09e6360e544d54f9145bc992bc39e4
+    - name: Tutorial_Icon_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 0
+        y: 2
+        width: 49
+        height: 25
+      spriteId: 6b57a411166e43349a6cef1c0daed604
+    - name: Tutorial_Icon_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 0
+        y: 2
+        width: 49
+        height: 25
+      spriteId: 702e9844118e09c44957a88bef342dd8
+    - name: Tutorial_Icon_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 0
+        y: 2
+        width: 40
+        height: 18
+      spriteId: c878d3dde8ff01e4f86daf64805a2fce
+    - name: Tutorial_Icon_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 0
+        y: 2
+        width: 40
+        height: 18
+      spriteId: 7d86d5c5f2aa5c14ca8f46399182efed
+    - name: Tutorial_Icon_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 0
+        y: 2
+        width: 40
+        height: 18
+      spriteId: cf1b7ef1b441eef4e94dfd5e00ceac34
+    - name: Tutorial_Icon_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 0
+        y: 2
+        width: 40
+        height: 18
+      spriteId: f3e8fe5a2ff8f3e4e8b1842c98c1e528
+    - name: Tutorial_Icon_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 0
+        y: 2
+        width: 41
+        height: 19
+      spriteId: 966f6488e70b30d4981e73610f71c8c2
+    - name: Tutorial_Icon_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 0
+        y: 2
+        width: 42
+        height: 20
+      spriteId: 27636d314227e2b46a38e16b82bace86
+    - name: Tutorial_Icon_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 0
+        y: 2
+        width: 39
+        height: 18
+      spriteId: 1b7e97357a72bf94f9cdd00a9e65b7c4
+    - name: Tutorial_Icon_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 0
+        y: 2
+        width: 38
+        height: 17
+      spriteId: 03393e2327a380e438ee8a448559e14b
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 53, y: 32}
