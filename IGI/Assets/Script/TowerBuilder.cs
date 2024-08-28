@@ -20,15 +20,19 @@ public class TowerBuilder : MonoBehaviour
     public float upgradeCost;
     public GameObject upgradePrefab;
     public bool towerUpgraded;
+    public Sprite craftIcon;
+    public Sprite upgradeIcon;
 
     private bool isPlayerInRange = false;
     private bool isBuilding = false;
     private float elapsedTime = 0;
     private GameObject player;
     private GameObject towerObject;
+    private AudioManager audioManager;
 
     void Start()
     {
+        audioManager = GameObject.Find("Audio Handler").GetComponent<AudioManager>();
         if (towerNumber == playerNumber.Player1)
         {
             currency = GameObject.FindGameObjectWithTag("CurrencyP1").GetComponent<Currency>();
@@ -54,7 +58,10 @@ public class TowerBuilder : MonoBehaviour
                     {
                         if (!isBuilding)
                         {
-                            player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Space to build food machine";
+                            Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                            tmp.a = 1f;
+                            player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                            player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = craftIcon;
                             if (Input.GetKeyDown(KeyCode.Space))
                             {
                                 StartCoroutine(BuildTower());
@@ -65,7 +72,10 @@ public class TowerBuilder : MonoBehaviour
                     {
                         if (!isBuilding)
                         {
-                            player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Right Shift to build food machine";
+                            Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                            tmp.a = 1f;
+                            player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                            player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = craftIcon;
                             if (Input.GetKeyDown(KeyCode.RightShift))
                             {
                                 StartCoroutine(BuildTower());
@@ -75,7 +85,10 @@ public class TowerBuilder : MonoBehaviour
                 }
                 else
                 {
-                    player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "You need " + buildCost.ToString() + " to build food machine";
+                    Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 0.5f;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = craftIcon;
                 }
             }
             //kalo mau di upgrade
@@ -87,7 +100,10 @@ public class TowerBuilder : MonoBehaviour
                     {
                         if (!isBuilding && !towerUpgraded)
                         {
-                            player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Space to upgrade food machine";
+                            Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                            tmp.a = 1f;
+                            player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                            player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = upgradeIcon;
                             if (Input.GetKeyDown(KeyCode.Space))
                             {
                                 StartCoroutine(UpgradeTower());
@@ -98,7 +114,10 @@ public class TowerBuilder : MonoBehaviour
                     {
                         if (!isBuilding && !towerUpgraded)
                         {
-                            player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Right Shift to upgrade food machine";
+                            Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                            tmp.a = 1f;
+                            player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                            player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = upgradeIcon;
                             if (Input.GetKeyDown(KeyCode.RightShift))
                             {
                                 StartCoroutine(UpgradeTower());
@@ -108,7 +127,10 @@ public class TowerBuilder : MonoBehaviour
                 }
                 else
                 {
-                    player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "You need " + upgradeCost.ToString() + " to upgrade food machine";
+                    Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 0.5f;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = upgradeIcon;
                 }
             }
         }
@@ -169,6 +191,8 @@ public class TowerBuilder : MonoBehaviour
             }
             if (isPlayerInRange)
             {
+                audioManager.audioSource.PlayOneShot(audioManager.craftMachine);
+                audioManager.audioSource.PlayOneShot(audioManager.upgradeMachine);
                 buildProgressSlider.gameObject.SetActive(false);
                 towerObject = Instantiate(towerPrefab, buildSpot.position, towerPrefab.transform.rotation);
                 towerObject.transform.SetParent(gameObject.transform);
@@ -197,6 +221,8 @@ public class TowerBuilder : MonoBehaviour
             }
             if (isPlayerInRange)
             {
+                audioManager.audioSource.PlayOneShot(audioManager.craftMachine);
+                audioManager.audioSource.PlayOneShot(audioManager.upgradeMachine);
                 buildProgressSlider.gameObject.SetActive(false);
                 float foodLeft = towerObject.GetComponent<TowerResource>().towerResource;
                 Destroy(towerObject);

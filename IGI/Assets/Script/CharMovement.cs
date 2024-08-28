@@ -14,8 +14,10 @@ public class CharMovement : MonoBehaviour
     public Animator anim;
 
     private Vector3 movement;
+    private AudioManager audioManager;
     private void Start()
     {
+        audioManager = GameObject.Find("Audio Handler").GetComponent<AudioManager>();
         if (player == playerNumber.Player1)
         {
             anim.Play("idlebiru");
@@ -35,6 +37,7 @@ public class CharMovement : MonoBehaviour
                 movement.x = 0;
                 movement.z = 0;
                 anim.Play("biruattack");
+                AudioSource.PlayClipAtPoint(audioManager.swing, gameObject.transform.position);
             }
         }
         else
@@ -45,6 +48,7 @@ public class CharMovement : MonoBehaviour
                 movement.x = 0;
                 movement.z = 0;
                 anim.Play("merahattack");
+                AudioSource.PlayClipAtPoint(audioManager.swing, gameObject.transform.position);
             }
         }
     }

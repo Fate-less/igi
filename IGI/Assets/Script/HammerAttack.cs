@@ -11,10 +11,17 @@ public class HammerAttack : MonoBehaviour
     public Animator anim;
     public bool enemyIsInRange;
     public float maxCooldown = 1;
+    public Sprite attackIcon;
 
+    private AudioManager audioManager;
     private GameObject enemyObject;
     private float atkCooldown;
     private bool isInTerritory;
+
+    private void Start()
+    {
+        audioManager = GameObject.Find("Audio Handler").GetComponent<AudioManager>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -26,7 +33,10 @@ public class HammerAttack : MonoBehaviour
             {
                 if (owner == playerNumber.Player1)
                 {
-                    player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Space to hit your opponent in front";
+                    Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 1f;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = attackIcon;
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         atkCooldown = maxCooldown + enemyObject.GetComponent<PlayerBlink>().blinkDuration;
@@ -35,7 +45,10 @@ public class HammerAttack : MonoBehaviour
                 }
                 else
                 {
-                    player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Right Shift to hit your opponent in front";
+                    Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 1f;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = attackIcon;
                     if (Input.GetKeyDown(KeyCode.RightShift))
                     {
                         atkCooldown = maxCooldown + enemyObject.GetComponent<PlayerBlink>().blinkDuration;
@@ -45,7 +58,10 @@ public class HammerAttack : MonoBehaviour
             }
             else
             {
-                player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "You cant attack opponent in their territory";
+                Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                tmp.a = 0.5f;
+                player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = attackIcon;
             }
         }
     }

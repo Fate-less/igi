@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour
     public WalkingDirection spawnDirection;
     public GameObject entityPrefab;
     public float spawnInterval = 5f;
+    private AudioManager audioManager;
     private bool isActive = false;
     private float timer = 0f;
 

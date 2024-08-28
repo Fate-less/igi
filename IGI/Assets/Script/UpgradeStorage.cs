@@ -9,13 +9,16 @@ public class UpgradeStorage : MonoBehaviour
     public float upgradeCost;
     public Resource resource;
     public Currency currency;
+    public Sprite upgradeStorageIcon;
 
     private GameObject player;
     private bool isInRange = false;
     private bool isUpgraded;
+    private AudioManager audioManager;
 
     private void Start()
     {
+        audioManager = GameObject.Find("Audio Handler").GetComponent<AudioManager>();
         if (owner == playerNumber.Player1)
         {
             currency = GameObject.FindGameObjectWithTag("CurrencyP1").GetComponent<Currency>();
@@ -42,24 +45,35 @@ public class UpgradeStorage : MonoBehaviour
             {
                 if(owner == playerNumber.Player1)
                 {
-                    player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Space to upgrade storage";
+                    Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 1f;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = upgradeStorageIcon;
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         upgradeStorage();
+                        audioManager.audioSource.PlayOneShot(audioManager.upgradeMachine);
                     }
                 }
                 else
                 {
-                    player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Right Shift to upgrade storage";
+                    Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 1f;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = upgradeStorageIcon;
                     if (Input.GetKeyDown(KeyCode.RightShift))
                     {
                         upgradeStorage();
+                        audioManager.audioSource.PlayOneShot(audioManager.upgradeMachine);
                     }
                 }
             }
             else
             {
-                player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "You need " + upgradeCost.ToString() + " to upgrade storage";
+                Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                tmp.a = 0.5f;
+                player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = upgradeStorageIcon;
             }
         }
     }

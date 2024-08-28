@@ -9,11 +9,13 @@ public class cookFood : MonoBehaviour
     public TowerResource towerResource;
     public GameObject customer;
     public Currency currency;
+    private AudioManager audioManager;
     private bool isInRange = false;
     private float cookCD;
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = GameObject.Find("Audio Handler").GetComponent<AudioManager>();
         owner = transform.parent.GetComponent<Tower>().owner;
         towerResource = transform.parent.GetComponent<TowerResource>();
         if(owner == playerNumber.Player1)
@@ -43,6 +45,7 @@ public class cookFood : MonoBehaviour
                     try
                     {
                         Destroy(customer.gameObject);
+                        audioManager.audioSource.PlayOneShot(audioManager.orderSuccess);
                         customer = null;
                     }
                     catch { }

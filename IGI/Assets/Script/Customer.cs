@@ -22,10 +22,12 @@ public class Customer : MonoBehaviour
     private bool isInWaitArea = false;
     private float waitTimer = 0f;
     private Rigidbody rb;
+    private AudioManager audioManager;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioManager = GameObject.Find("Audio Handler").GetComponent<AudioManager>();
     }
 
     void FixedUpdate()
@@ -107,10 +109,12 @@ public class Customer : MonoBehaviour
         if (owner == playerNumber.Player1)
         {
             GameObject.FindGameObjectWithTag("PlayerHealthP1").GetComponent<PlayerHealth>().healthDecrease();
+            AudioSource.PlayClipAtPoint(audioManager.orderFailed, gameObject.transform.position);
         }
         else
         {
             GameObject.FindGameObjectWithTag("PlayerHealthP2").GetComponent<PlayerHealth>().healthDecrease();
+            AudioSource.PlayClipAtPoint(audioManager.orderFailed, gameObject.transform.position);
         }
     }
 

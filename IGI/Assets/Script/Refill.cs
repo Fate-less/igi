@@ -9,13 +9,16 @@ public class Refill : MonoBehaviour
     public float refillCost;
     public Currency currency;
     public Resource resourceStorage;
+    public Sprite refillIcon;
 
+    private AudioManager audioManager;
     private bool isInRange = false;
     private GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        if(owner == playerNumber.Player1)
+        audioManager = GameObject.Find("Audio Handler").GetComponent<AudioManager>();
+        if (owner == playerNumber.Player1)
         {
             currency = GameObject.FindGameObjectWithTag("CurrencyP1").GetComponent<Currency>();
         }
@@ -34,27 +37,38 @@ public class Refill : MonoBehaviour
             {
                 if (owner == playerNumber.Player1)
                 {
-                    player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Space to Refill";
+                    Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 1f;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = refillIcon;
                     if (Input.GetKeyDown(KeyCode.Space) && resourceStorage.foodResource < resourceStorage.maxFoodResource)
                     {
                         currency.money -= refillCost;
                         resourceStorage.foodResource += 2;
+                        audioManager.audioSource.PlayOneShot(audioManager.buyResource);
                     }
                 }
                 else
                 {
                     player.transform.GetChild(0).gameObject.SetActive(true);
-                    player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Right Shift to Refill";
+                    Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 1f;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = refillIcon;
                     if (Input.GetKeyDown(KeyCode.RightShift) && resourceStorage.foodResource < resourceStorage.maxFoodResource)
                     {
                         currency.money -= refillCost;
                         resourceStorage.foodResource += 2;
+                        audioManager.audioSource.PlayOneShot(audioManager.buyResource);
                     }
                 }
             }
             else
             {
-                player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "You need " + refillCost.ToString() + " to refill";
+                Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                tmp.a = 0.5f;
+                player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = refillIcon;
             }
         }
     }

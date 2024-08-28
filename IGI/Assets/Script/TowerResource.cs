@@ -11,10 +11,12 @@ public class TowerResource : MonoBehaviour
     public float towerResource = 0;
     public float maxResource;
     public float increment;
+    private AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = GameObject.Find("Audio Handler").GetComponent<AudioManager>();
         if(towerScript.owner == playerNumber.Player1)
         {
             resourceStorage = GameObject.FindGameObjectWithTag("Storage1").GetComponent<Resource>();
@@ -50,6 +52,7 @@ public class TowerResource : MonoBehaviour
                     towerResource = maxResource;
                 }
                 other.transform.GetChild(1).gameObject.SetActive(false);
+                audioManager.audioSource.PlayOneShot(audioManager.resupplyMachine);
             }
         }
     }

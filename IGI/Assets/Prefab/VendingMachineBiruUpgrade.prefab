@@ -435,6 +435,7 @@ MonoBehaviour:
   destroyProgressSlider: {fileID: 1199435932526008949}
   destroyTime: 10
   buildArea: {fileID: 0}
+  destroyTowerIcon: {fileID: 21300000, guid: 94a55f0a7b3148b4398b4d9f3eac7c6a, type: 3}
 --- !u!114 &3082561725888852808
 MonoBehaviour:
   m_ObjectHideFlags: 0

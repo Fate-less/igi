@@ -12,12 +12,14 @@ public class Tower : MonoBehaviour
     public Image destroyProgressSlider;
     public float destroyTime = 5f;
     public TowerBuilder buildArea;
+    public Sprite destroyTowerIcon;
 
     private float currentHealth;
     private bool isPlayerInRange = false;
     private bool isBeingDestroyed = false;
     private playerNumber playerInRange;
     private float elapsedTime = 0;
+    private AudioManager audioManager;
 
     void Start()
     {
@@ -25,6 +27,7 @@ public class Tower : MonoBehaviour
         destroyProgressSlider.gameObject.SetActive(false);
         buildArea = transform.GetComponentInParent<TowerBuilder>();
         owner = transform.parent.GetComponent<TowerBuilder>().towerNumber;
+        audioManager = GameObject.Find("Audio Handler").GetComponent<AudioManager>();
     }
 
     void Update()
@@ -58,11 +61,17 @@ public class Tower : MonoBehaviour
                 destroyPopupUI = other.transform.GetChild(0).gameObject;
                 if (playerInRange == playerNumber.Player1)
                 {
-                    destroyPopupUI.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Press Space to Destroy";
+                    Color tmp = destroyPopupUI.transform.GetComponent<SpriteRenderer>().color;
+                    tmp.a = 1f;
+                    destroyPopupUI.transform.GetComponent<SpriteRenderer>().color = tmp;
+                    destroyPopupUI.transform.GetComponent<SpriteRenderer>().sprite = destroyTowerIcon;
                 }
                 else
                 {
-                    destroyPopupUI.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Press Right Shift to Destroy";
+                    Color tmp = destroyPopupUI.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 1f;
+                    destroyPopupUI.transform.GetComponent<SpriteRenderer>().color = tmp;
+                    destroyPopupUI.transform.GetComponent<SpriteRenderer>().sprite = destroyTowerIcon;
                 }
                 destroyPopupUI.SetActive(true);
             }
@@ -102,6 +111,7 @@ public class Tower : MonoBehaviour
                 currentHealth -= maxHealth;
                 if (currentHealth <= 0)
                 {
+                    audioManager.audioSource.PlayOneShot(audioManager.destroyMachine);
                     Destroy(gameObject);
                     buildArea.towerBuilt = false;
                 }

@@ -10,10 +10,17 @@ public class Resource : MonoBehaviour
     public float foodResource;
     public float maxFoodResource = 10;
     public Image healthbar;
+    public Sprite resourceIcon;
 
     private GameObject player;
+    private AudioManager audioManager;
 
     public bool isInRange;
+
+    private void Start()
+    {
+        audioManager = GameObject.Find("Audio Handler").GetComponent<AudioManager>();
+    }
 
     private void Update()
     {
@@ -24,24 +31,35 @@ public class Resource : MonoBehaviour
             {
                 if (owner == playerNumber.Player1)
                 {
-                    player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Space to take resource";
+                    Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 1f;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = resourceIcon;
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         player.transform.GetChild(1).gameObject.SetActive(true);
+                        audioManager.audioSource.PlayOneShot(audioManager.takeResource);
                     }
                 }
                 else
                 {
-                    player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Press Right Shift to take resource";
+                    Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    tmp.a = 1f;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                    player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = resourceIcon;
                     if (Input.GetKeyDown(KeyCode.RightShift))
                     {
                         player.transform.GetChild(1).gameObject.SetActive(true);
+                        audioManager.audioSource.PlayOneShot(audioManager.takeResource);
                     }
                 }
             }
             else
             {
-                player.transform.GetChild(0).GetChild(0).GetComponent<TextMeshPro>().text = "Your resource is empty";
+                Color tmp = player.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                tmp.a = 0.5f;
+                player.transform.GetChild(0).GetComponent<SpriteRenderer>().color = tmp;
+                player.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = resourceIcon;
             }
         }
     }
