@@ -68,7 +68,7 @@ public class Tower : MonoBehaviour
                 }
                 else
                 {
-                    Color tmp = destroyPopupUI.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    Color tmp = destroyPopupUI.transform.GetComponent<SpriteRenderer>().color;
                     tmp.a = 1f;
                     destroyPopupUI.transform.GetComponent<SpriteRenderer>().color = tmp;
                     destroyPopupUI.transform.GetComponent<SpriteRenderer>().sprite = destroyTowerIcon;
