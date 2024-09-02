@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
@@ -9,16 +10,20 @@ public class PlayerHealth : MonoBehaviour
     public playerNumber owner;
     public float health = 5f;
     public TextMeshProUGUI winloseTMP;
-    public TextMeshProUGUI ratingTMP;
+    public GameObject[] ratingIMG;
 
     public void healthDecrease()
     {
         health--;
+        try
+        {
+            ratingIMG[(int)health].SetActive(false);
+        }
+        catch { }
     }
 
     private void Update()
     {
-        ratingTMP.text = health.ToString() + "/5";
         if(health <= 0)
         {
             if(owner == playerNumber.Player1)

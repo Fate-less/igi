@@ -147,7 +147,6 @@ public class TowerBuilder : MonoBehaviour
                     player = other.gameObject;
                     isPlayerInRange = true;
                     popupUI.SetActive(true);
-                    popupUI.transform.GetChild(0).GetComponent<TextMeshPro>().text = "Press Space to Build";
                 }
             }
         }
