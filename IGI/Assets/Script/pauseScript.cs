@@ -6,7 +6,14 @@ public class pauseScript : MonoBehaviour
 {
     public bool isPaused;
     public GameObject pauseScreen;
+    public Tutorial tutorialScript;
 
+    private void Start()
+    {
+        Time.timeScale = 0;
+        isPaused = true;
+        pauseScreen.SetActive(true);
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -19,9 +26,12 @@ public class pauseScript : MonoBehaviour
             }
             else
             {
-                Time.timeScale = 1;
-                isPaused = false;
-                pauseScreen.SetActive(false);
+                if (!tutorialScript.isOn)
+                {
+                    Time.timeScale = 1;
+                    isPaused = false;
+                    pauseScreen.SetActive(false);
+                }
             }
         }
     }

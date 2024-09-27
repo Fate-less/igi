@@ -11,6 +11,10 @@ public class buttonScript : MonoBehaviour
     }
     public void MoveToMenu()
     {
+        if(Time.timeScale == 0)
+        {
+            Time.timeScale = 1;
+        }
         SceneManager.LoadScene("Mainmenu");
     }
     public void MoveToTutorial()
