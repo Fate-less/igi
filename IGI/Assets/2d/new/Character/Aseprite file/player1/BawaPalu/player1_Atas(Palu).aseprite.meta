@@ -250,48 +250,54 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: player1_Atas(Palu)_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 6
         width: 36
         height: 50
       spriteId: 41afc87397aba5848a1ff5e58e8b27c8
-    - name: player1_Atas(Palu)_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 4
         width: 36
         height: 50
       spriteId: 73eb19df92719cd42976a9eb202dd213
-    - name: player1_Atas(Palu)_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 4
         width: 36
         height: 50
       spriteId: bec7158e170fc23499944ebde811875a
-    - name: player1_Atas(Palu)_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 6
         width: 36
         height: 50
       spriteId: 754d243cf6696ac4d88d77b5e357d37e
-    - name: player1_Atas(Palu)_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 4
         width: 36
         height: 50
       spriteId: 75330e7b901e11a4f8e4feb000f5c467
-    - name: player1_Atas(Palu)_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 4

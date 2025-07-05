@@ -250,48 +250,54 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: player2_Bawah_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: -77
         y: 0
         width: 194
         height: 196
       spriteId: 5917bb6afe0c1044aae42c1cb05aa50c
-    - name: player2_Bawah_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: -70
         y: 0
         width: 187
         height: 194
       spriteId: 3c0d946acb92b7f49a050e13ad9f3c02
-    - name: player2_Bawah_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: -70
         y: 2
         width: 187
         height: 192
       spriteId: 7d386ceee469ed54ea04fc2a974635d0
-    - name: player2_Bawah_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: -70
         y: 2
         width: 187
         height: 194
       spriteId: 9959911b7ef395943aa287a9488df5af
-    - name: player2_Bawah_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: -70
         y: 0
         width: 187
         height: 194
       spriteId: a786223f2e2ac7d4cbb4e5b4130d6c32
-    - name: player2_Bawah_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: -70
         y: 0

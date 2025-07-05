@@ -250,48 +250,54 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Poster_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 0
         width: 20
         height: 32
       spriteId: 81216821da6de6f459084cdd4779aaab
-    - name: Poster_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 4
         y: 0
         width: 24
         height: 32
       spriteId: 48254738a4eb2854b92293b8ee99bea6
-    - name: Poster_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 1
         width: 32
         height: 30
       spriteId: 1668188bb05a35a4bb548f646746f458
-    - name: Poster_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 5
         y: 0
         width: 21
         height: 32
       spriteId: fc178f7f8b0caec4cada4d250b9b159a
-    - name: Poster_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 32
         height: 32
       spriteId: 059eb01394131724fa8efea6d2e4c5d0
-    - name: Poster_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0

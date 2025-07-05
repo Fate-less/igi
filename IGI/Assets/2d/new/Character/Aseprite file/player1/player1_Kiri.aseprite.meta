@@ -250,48 +250,54 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: player1_Kiri_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: -66
         width: 196
         height: 196
       spriteId: 19bf5d2d38f24c349a66982100d93c9e
-    - name: player1_Kiri_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: -64
         width: 189
         height: 192
       spriteId: 2880d90310c97bf44bbc4ec5dceaab7a
-    - name: player1_Kiri_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: -62
         width: 189
         height: 190
       spriteId: 55782ed76e63fbf42a16d6abd9f79bef
-    - name: player1_Kiri_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: -62
         width: 189
         height: 192
       spriteId: e11cdd0ac09ddb0428b0179304ea2c6b
-    - name: player1_Kiri_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: -64
         width: 189
         height: 192
       spriteId: 16cf7561c803f6b4d9ed6cc2cf427db3
-    - name: player1_Kiri_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: -64

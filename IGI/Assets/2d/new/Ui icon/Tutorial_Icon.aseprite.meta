@@ -1090,384 +1090,432 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Tutorial_Icon_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 49
         height: 27
       spriteId: 90179fbf9e6a395449656e4ac0ce2190
-    - name: Tutorial_Icon_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 49
         height: 27
       spriteId: 3e88897297363e34b80b180f922b93dd
-    - name: Tutorial_Icon_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 51
         height: 28
       spriteId: 02864328602d5bd44853be4c703513fe
-    - name: Tutorial_Icon_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 52
         height: 29
       spriteId: 78f2a3f672cf8ae4dbef2cefa8750c01
-    - name: Tutorial_Icon_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 47
         height: 25
       spriteId: ec7ef062f110ec54aac1353f48b0f25d
-    - name: Tutorial_Icon_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 40
         height: 22
       spriteId: cf738ed9a4869994aa26d31088a61910
-    - name: Tutorial_Icon_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 37
         height: 23
       spriteId: f01106efc5d614f4499eac1ecafcb95f
-    - name: Tutorial_Icon_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 35
         height: 22
       spriteId: 33c38c54bf3c16a46bc194f40b6a69f1
-    - name: Tutorial_Icon_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 34
         height: 22
       spriteId: 5890a2ad5f69efd4bb7118f7f9347d44
-    - name: Tutorial_Icon_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 34
         height: 22
       spriteId: 4dd5778c4f50b5d45899e2a104e95840
-    - name: Tutorial_Icon_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 35
         height: 22
       spriteId: a6d91b8d46110fd409329d79be31810c
-    - name: Tutorial_Icon_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 45
         height: 24
       spriteId: 609e8fc14d9864649a5cd9f52cef6ecd
-    - name: Tutorial_Icon_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 53
         height: 30
       spriteId: 96d582823f4d17340a9078f8818b0bf9
-    - name: Tutorial_Icon_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 51
         height: 28
       spriteId: c14422e2c4555924881656e77b31b73b
-    - name: Tutorial_Icon_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 49
         height: 27
       spriteId: aa8968fd35f68bb458a22029a3aa681d
-    - name: Tutorial_Icon_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 49
         height: 27
       spriteId: bb745b09e6e326b4ababd82511791099
-    - name: Tutorial_Icon_Frame_16
+    - name: Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 40
         height: 20
       spriteId: 42c58f193210a3243bbea303911c6479
-    - name: Tutorial_Icon_Frame_17
+    - name: Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 40
         height: 20
       spriteId: e6294270c2055c3439f24bcde0feb558
-    - name: Tutorial_Icon_Frame_18
+    - name: Frame_18
       frameIndex: 18
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 40
         height: 20
       spriteId: 2e0d6826a382c3a4793d0cebb1c1f7c2
-    - name: Tutorial_Icon_Frame_19
+    - name: Frame_19
       frameIndex: 19
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 40
         height: 20
       spriteId: e0623b62e71275a4c8b6dac950ecb6e3
-    - name: Tutorial_Icon_Frame_20
+    - name: Frame_20
       frameIndex: 20
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 41
         height: 21
       spriteId: 2bc1703db58ce8a44bc8d96404a5a8cf
-    - name: Tutorial_Icon_Frame_21
+    - name: Frame_21
       frameIndex: 21
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 42
         height: 22
       spriteId: 44b51dae85aa59545bba67ba93c412ee
-    - name: Tutorial_Icon_Frame_22
+    - name: Frame_22
       frameIndex: 22
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 39
         height: 20
       spriteId: b1a2760341f3e0a438699246a3782909
-    - name: Tutorial_Icon_Frame_23
+    - name: Frame_23
       frameIndex: 23
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 38
         height: 19
       spriteId: 1a64417fb6b8df64d965bb7261640d8d
-    - name: Tutorial_Icon_Frame_24
+    - name: Frame_24
       frameIndex: 24
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 49
         height: 25
       spriteId: d133c5724ad38554eacbe06a787872dd
-    - name: Tutorial_Icon_Frame_25
+    - name: Frame_25
       frameIndex: 25
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 49
         height: 25
       spriteId: ed3828cd61179aa439b51df3f688754f
-    - name: Tutorial_Icon_Frame_26
+    - name: Frame_26
       frameIndex: 26
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 51
         height: 26
       spriteId: 8034f4d35a1ec344aa9eeb78650047fc
-    - name: Tutorial_Icon_Frame_27
+    - name: Frame_27
       frameIndex: 27
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 52
         height: 27
       spriteId: 5d4ea364ae69c5c48b644b8f1b3ee011
-    - name: Tutorial_Icon_Frame_28
+    - name: Frame_28
       frameIndex: 28
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 47
         height: 23
       spriteId: f4677cae4e9ed514582b65eea6aec2e2
-    - name: Tutorial_Icon_Frame_29
+    - name: Frame_29
       frameIndex: 29
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 40
         height: 20
       spriteId: 46dd4ef305f8a5c4e85ff25223011e23
-    - name: Tutorial_Icon_Frame_30
+    - name: Frame_30
       frameIndex: 30
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 37
         height: 21
       spriteId: d28552f257250f74e8c053a54570cdb6
-    - name: Tutorial_Icon_Frame_31
+    - name: Frame_31
       frameIndex: 31
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 37
         height: 20
       spriteId: 56840eed11a640d468af60c77a60f385
-    - name: Tutorial_Icon_Frame_32
+    - name: Frame_32
       frameIndex: 32
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 37
         height: 20
       spriteId: d58f5e9c24c5b4746b7df255bb71189c
-    - name: Tutorial_Icon_Frame_33
+    - name: Frame_33
       frameIndex: 33
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 37
         height: 20
       spriteId: 7b8f448ba44f6ba48931177f0b3c46a2
-    - name: Tutorial_Icon_Frame_34
+    - name: Frame_34
       frameIndex: 34
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 37
         height: 20
       spriteId: dfcb4a59be85dc34ca39d6464beeae81
-    - name: Tutorial_Icon_Frame_35
+    - name: Frame_35
       frameIndex: 35
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 45
         height: 22
       spriteId: 7c88ed195fb61c84b830bcd190ac2fb7
-    - name: Tutorial_Icon_Frame_36
+    - name: Frame_36
       frameIndex: 36
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 53
         height: 28
       spriteId: c531fe3a0f7956e48bc6905cc18502ac
-    - name: Tutorial_Icon_Frame_37
+    - name: Frame_37
       frameIndex: 37
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 51
         height: 26
       spriteId: ce09e6360e544d54f9145bc992bc39e4
-    - name: Tutorial_Icon_Frame_38
+    - name: Frame_38
       frameIndex: 38
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 49
         height: 25
       spriteId: 6b57a411166e43349a6cef1c0daed604
-    - name: Tutorial_Icon_Frame_39
+    - name: Frame_39
       frameIndex: 39
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 49
         height: 25
       spriteId: 702e9844118e09c44957a88bef342dd8
-    - name: Tutorial_Icon_Frame_40
+    - name: Frame_40
       frameIndex: 40
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 40
         height: 18
       spriteId: c878d3dde8ff01e4f86daf64805a2fce
-    - name: Tutorial_Icon_Frame_41
+    - name: Frame_41
       frameIndex: 41
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 40
         height: 18
       spriteId: 7d86d5c5f2aa5c14ca8f46399182efed
-    - name: Tutorial_Icon_Frame_42
+    - name: Frame_42
       frameIndex: 42
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 40
         height: 18
       spriteId: cf1b7ef1b441eef4e94dfd5e00ceac34
-    - name: Tutorial_Icon_Frame_43
+    - name: Frame_43
       frameIndex: 43
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 40
         height: 18
       spriteId: f3e8fe5a2ff8f3e4e8b1842c98c1e528
-    - name: Tutorial_Icon_Frame_44
+    - name: Frame_44
       frameIndex: 44
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 41
         height: 19
       spriteId: 966f6488e70b30d4981e73610f71c8c2
-    - name: Tutorial_Icon_Frame_45
+    - name: Frame_45
       frameIndex: 45
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 42
         height: 20
       spriteId: 27636d314227e2b46a38e16b82bace86
-    - name: Tutorial_Icon_Frame_46
+    - name: Frame_46
       frameIndex: 46
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 39
         height: 18
       spriteId: 1b7e97357a72bf94f9cdd00a9e65b7c4
-    - name: Tutorial_Icon_Frame_47
+    - name: Frame_47
       frameIndex: 47
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2

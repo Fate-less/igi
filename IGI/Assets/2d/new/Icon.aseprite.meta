@@ -350,88 +350,99 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Icon_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 34
         height: 30
       spriteId: 2d36120de2fbda84e907d3bced4c272b
-    - name: Icon_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 0
         width: 33
         height: 30
       spriteId: dc544a8b9b920c348a4b1ea793e1c714
-    - name: Icon_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 34
         height: 30
       spriteId: f83f6b39b2543cf4bbd969b441669b24
-    - name: Icon_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 34
         height: 30
       spriteId: 2e33798b818ff1c4b8bc38995d5ccbe2
-    - name: Icon_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 34
         height: 29
       spriteId: 367accc43191f2047958f9decac68686
-    - name: Icon_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 34
         height: 29
       spriteId: c8d520b605bc878418f8dd2b9d400485
-    - name: Icon_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 34
         height: 30
       spriteId: 300cc310be9a11a479b9a1654bede1df
-    - name: Icon_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 1
         width: 34
         height: 28
       spriteId: d0ff104345c810f42bcd955223d0f755
-    - name: Icon_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 34
         height: 30
       spriteId: a98b39ffd8a1817409ccfebf285e8ba9
-    - name: Icon_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 0
         width: 28
         height: 27
       spriteId: 6864857e1673e91448531fe7104e7f7a
-    - name: Icon_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0

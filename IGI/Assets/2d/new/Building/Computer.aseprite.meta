@@ -190,24 +190,27 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Computer_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 8
         y: 0
         width: 48
         height: 32
       spriteId: 63b63911feb99804db8213cc0b9a9dd6
-    - name: Computer_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 5
         y: 0
         width: 54
         height: 32
       spriteId: e953841e355409849805507588cd2ade
-    - name: Computer_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 21
         y: 0

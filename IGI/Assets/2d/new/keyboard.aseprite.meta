@@ -450,128 +450,144 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: keyboard_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 16
       spriteId: 21e39feed46234d41a659016bd0e2a16
-    - name: keyboard_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 15
       spriteId: fccdb938a05823247b524716a3c1b43b
-    - name: keyboard_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 16
       spriteId: a1b9283fb0b5e3e47a91337cb205fbb7
-    - name: keyboard_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 15
       spriteId: 4a15441941200064e89a0d2acff22182
-    - name: keyboard_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 16
       spriteId: baa90ad33e9bd914a80262a1638bb01d
-    - name: keyboard_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 15
       spriteId: 364420e20a9753242938c6009f5d1814
-    - name: keyboard_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 16
       spriteId: 9dcc18c7db780cb41a9cce1fc3579816
-    - name: keyboard_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 15
       spriteId: cd4064a0684bff24a820600fc38efab4
-    - name: keyboard_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 16
       spriteId: ed1769e26c3a0cb41b69a8b85e11ee44
-    - name: keyboard_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 15
       spriteId: 18c0ed9fee4b8474198814d648ff6aa1
-    - name: keyboard_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 16
       spriteId: 913ad9654e728cf48b87ac0dcd35f9b2
-    - name: keyboard_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 15
       spriteId: 50e3bb370c7013e4aa87b6f46a2f46cc
-    - name: keyboard_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 16
       spriteId: d1af565489eb5df4c9fc50d0f6553f6c
-    - name: keyboard_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 15
       spriteId: e3405be5a532f964890a321672b1f38d
-    - name: keyboard_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3
         width: 18
         height: 16
       spriteId: 66f8754d79e8a0b418240b7ccb49f7bd
-    - name: keyboard_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 3

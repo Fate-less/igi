@@ -210,32 +210,36 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: KARDUS_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 64
       spriteId: 44975644959d29b40a95ab1e3a598023
-    - name: KARDUS_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 64
       spriteId: aed61d89d3f7e664b83e12b641f02f52
-    - name: KARDUS_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
         width: 96
         height: 64
       spriteId: c25fab0d85ec0da4c9cfc437de40d140
-    - name: KARDUS_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0

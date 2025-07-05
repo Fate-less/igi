@@ -270,56 +270,63 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: player1_Kiri(Attack)_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 10
         y: 5
         width: 42
         height: 52
       spriteId: 25dc36c33161eb44c824ec7296714ab8
-    - name: player1_Kiri(Attack)_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 10
         y: 5
         width: 42
         height: 50
       spriteId: 40589fdc80be01747bb7806e4e226e60
-    - name: player1_Kiri(Attack)_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 14
         y: 5
         width: 42
         height: 50
       spriteId: 8a8a17e598f34cd49a2ab73d4cc63fac
-    - name: player1_Kiri(Attack)_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 5
         width: 45
         height: 50
       spriteId: 1e50bdb537d36964fbd0f42154ee464a
-    - name: player1_Kiri(Attack)_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 5
         width: 43
         height: 50
       spriteId: 25ba8acf27474f64c89717f073732ef7
-    - name: player1_Kiri(Attack)_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 6
         y: 5
         width: 43
         height: 50
       spriteId: 01dde753bfab6754bb718d1c4b52c0ea
-    - name: player1_Kiri(Attack)_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 5
